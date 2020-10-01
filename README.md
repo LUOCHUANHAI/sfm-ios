@@ -8,6 +8,8 @@ This is the code implementation on iOS of a realtime SfM algorithm presented in 
 
 This implementation achieves a speed of 0.8 second per reconstruction for around 500 feature points. The top 2 time-comusing parts in this implementation is SURF features detection and depth searching by reprojection error. By the way, for the convenience of coding, the input for each reconstruction in this implementation is a pair of images, so that each image's SURF features are computed twice (except the first one), which is a waste of time. The following students in this project should consider to save the computed features and use them for reconstructions, which might save 1/4 to 1/3 of the reconstruction time.
 
+Video demonstrations for camera calibration and reconstruction by the developed iOS App can be found in [https://youtu.be/oAReG5ddL-4](https://youtu.be/oAReG5ddL-4) and [https://youtu.be/yzBv0YeNo88](https://youtu.be/yzBv0YeNo88).
+
 #### Environment Setup
 * OpenCV Homepage: [https://opencv.org](https://opencv.org)
 * Setting up OpenCV and C++ development environment in Xcode for Computer Vision projects: [https://medium.com/@jaskaranvirdi/setting-up-opencv-and-c-development-environment-in-xcode-b6027728003](https://medium.com/@jaskaranvirdi/setting-up-opencv-and-c-development-environment-in-xcode-b6027728003)
